@@ -1,0 +1,7 @@
+[package]
+name = "mini_asm"
+version = "0.1.0"
+authors = ["freeman-duncan-6365 <duncan.freeman.6365@mail.linnbenton.edu>"]
+edition = "2018"
+
+[dependencies]
