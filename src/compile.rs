@@ -1,5 +1,5 @@
-use std::collections::hash_map::HashMap;
 use crate::token::*;
+use std::collections::hash_map::HashMap;
 
 pub fn compile(program: &[Token]) -> Vec<u8> {
     let mut output: Vec<u8> = Vec::new();
@@ -20,7 +20,7 @@ pub fn compile(program: &[Token]) -> Vec<u8> {
                 output.push(
                     *label_hashmap
                         .get(&label)
-                        .expect(&format!("Label not found: {}", &label)),
+                        .unwrap_or_else(|| panic!("Label not found: {}", &label)),
                 );
             }
         };

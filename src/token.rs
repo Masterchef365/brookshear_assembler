@@ -18,6 +18,7 @@ impl<'a> Token<'a> {
         }
     }
 
+    #[allow(dead_code)]
     pub fn from_label(label: &'a str) -> Self {
         Self {
             value: TokenValue::Label(label),
@@ -25,10 +26,8 @@ impl<'a> Token<'a> {
         }
     }
 
+    #[allow(dead_code)]
     pub fn empty_label(value: TokenValue<'a>) -> Self {
-        Self {
-            value,
-            label: None,
-        }
+        Self { value, label: None }
     }
 }
