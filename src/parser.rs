@@ -109,7 +109,9 @@ named!(parse_datasegment<&str, Vec<Token>>,
                })
        )));
 
-named!(pub parse_token<&str, Vec<Token>>, alt!( parse_datasegment | parse_instruction ));
+named!(pub parse_token<&str, Vec<Token>>, alt!( 
+    parse_datasegment | parse_instruction | tag!("//") => { |_| vec![] }
+));
 
 #[cfg(test)]
 mod tests {
