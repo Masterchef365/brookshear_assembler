@@ -1,0 +1,14 @@
+pub const LMEM: u8 = 0x10;
+pub const LCON: u8 = 0x20;
+pub const STOR: u8 = 0x30;
+pub const MOVE: u8 = 0x40;
+pub const ADDR: u8 = 0x50;
+pub const OR: u8 = 0x70;
+pub const AND: u8 = 0x80;
+pub const XOR: u8 = 0x90;
+pub const ROT: u8 = 0xA0;
+pub const JUMP: u8 = 0xB0;
+pub const HALT: u8 = 0xC0;
+pub const CHAR: u8 = 0xD0;
+pub const LESS: u8 = 0xE0;
+pub const DISP: u8 = 0xF0;

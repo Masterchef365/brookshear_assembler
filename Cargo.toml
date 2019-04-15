@@ -5,3 +5,4 @@ authors = ["freeman-duncan-6365 <duncan.freeman.6365@mail.linnbenton.edu>"]
 edition = "2018"
 
 [dependencies]
+nom = "4.2.3"
